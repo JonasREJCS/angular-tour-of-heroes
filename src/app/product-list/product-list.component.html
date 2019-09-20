@@ -1,9 +1,11 @@
 <h2>Products wich you can buy if is less than 700</h2>
 
-<div *ngFor="let product of products">
-    <h3>
-        {{product.name}}
-    </h3>
+<div *ngFor="let product of products; index as productId">
+    <a [title]="product.name + ' details'" [routerLink]="['/products',productId]">
+        <h3>
+            {{product.name}}
+        </h3>
+    </a>
 
     <h4>
         the PRICE is: {{product.price}}
