@@ -1,0 +1,25 @@
+<h3>LOGIN</h3>
+
+<p>
+    <a routerLink="/login">Login</a>
+</p>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+
+    <div>
+        <label for="user">
+            SUser:
+        </label>
+        <input id="user" type="text" formControlName="user">
+    </div>
+
+    <div>
+        <label for="senha">
+           Senha:
+        </label>
+        <input id="senha" type="text" formControlName="senha">
+    </div>
+
+    <button class="button">LOGAR</button>
+
+</form>
