@@ -19,7 +19,8 @@ export class CartComponent {
 
     this.checkoutForm = this.formBuilder.group({
       name: '',
-      address: ''
+      address: '',
+      phoneNumber: ''
     });
   }
 

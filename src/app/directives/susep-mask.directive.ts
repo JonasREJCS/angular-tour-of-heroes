@@ -32,6 +32,7 @@ export class SusepMaskDirective {
     } else if (newVal.length === 17) {
       newVal = newVal.replace(/^(\d{0,5})(\d{0,6})(\d{0,4})/, '$1.$2/$3-');
     }
+    
     this.ngControl.valueAccessor.writeValue(newVal);
   }
 }

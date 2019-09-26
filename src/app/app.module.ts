@@ -13,6 +13,9 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CheckoutAlertComponent } from './checkout-alert/checkout-alert.component';
 import { LoginComponent } from './login/login.component';
+import { SusepPipe } from './pipes/susep.pipe';
+import { SusepMaskDirective } from './directives/susep-mask.directive';
+import { TelefoneCelularMaskDirective } from './directives/telefone-celular-mask.directive';
 
 @NgModule({
   imports: [
@@ -36,7 +39,13 @@ import { LoginComponent } from './login/login.component';
     CartComponent,
     ShippingComponent,
     CheckoutAlertComponent,
-    LoginComponent
+    LoginComponent,
+    SusepPipe,
+    SusepMaskDirective,
+    TelefoneCelularMaskDirective
+  ],
+  exports: [
+    SusepMaskDirective
   ],
   bootstrap: [ AppComponent ]
 })

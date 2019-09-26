@@ -20,7 +20,8 @@ export class LoginComponent implements OnInit {
   ) { 
     this.loginForm = this.formBuilder.group({
       user: '',
-      senha: ''
+      senha: '',
+      susep: ''
     });
   }
 
